@@ -13,6 +13,10 @@
 		1A64731628F41FFB0063A71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64731428F41FFB0063A71B /* Main.storyboard */; };
 		1A64731828F41FFE0063A71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A64731728F41FFE0063A71B /* Assets.xcassets */; };
 		1A64731B28F41FFE0063A71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64731928F41FFE0063A71B /* LaunchScreen.storyboard */; };
+		1A64732C28F427C70063A71B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64732B28F427C70063A71B /* Buttons.swift */; };
+		1A64733028F4294C0063A71B /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A64732E28F4294B0063A71B /* SFProDisplay-Regular.ttf */; };
+		1A64733128F4294C0063A71B /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A64732F28F4294B0063A71B /* SFProDisplay-Bold.ttf */; };
+		1A64733328F429DE0063A71B /* Resourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64733228F429DE0063A71B /* Resourses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1A64731728F41FFE0063A71B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A64731A28F41FFE0063A71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A64731C28F41FFE0063A71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A64732B28F427C70063A71B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		1A64732E28F4294B0063A71B /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		1A64732F28F4294B0063A71B /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		1A64733228F429DE0063A71B /* Resourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,91 @@
 		1A64730D28F41FFB0063A71B /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
-				1A64730E28F41FFB0063A71B /* AppDelegate.swift */,
-				1A64731028F41FFB0063A71B /* SceneDelegate.swift */,
-				1A64731228F41FFB0063A71B /* ViewController.swift */,
-				1A64731428F41FFB0063A71B /* Main.storyboard */,
-				1A64731728F41FFE0063A71B /* Assets.xcassets */,
-				1A64731928F41FFE0063A71B /* LaunchScreen.storyboard */,
-				1A64731C28F41FFE0063A71B /* Info.plist */,
+				1A64732628F421510063A71B /* GameScreen */,
+				1A64732528F4210E0063A71B /* TrainingScreen */,
+				1A64732428F420F10063A71B /* MainScreen */,
+				1A64732328F420CA0063A71B /* Resourses */,
+				1A64732228F420B30063A71B /* SupportingFiles */,
 			);
 			path = Bubbles;
+			sourceTree = "<group>";
+		};
+		1A64732228F420B30063A71B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1A64731928F41FFE0063A71B /* LaunchScreen.storyboard */,
+				1A64731C28F41FFE0063A71B /* Info.plist */,
+				1A64732728F421710063A71B /* App */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1A64732328F420CA0063A71B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				1A64732D28F4294B0063A71B /* Fonts */,
+				1A64731728F41FFE0063A71B /* Assets.xcassets */,
+				1A64733228F429DE0063A71B /* Resourses.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		1A64732428F420F10063A71B /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1A64732A28F427A90063A71B /* Views */,
+				1A64732828F421960063A71B /* Controllers */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		1A64732528F4210E0063A71B /* TrainingScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TrainingScreen;
+			sourceTree = "<group>";
+		};
+		1A64732628F421510063A71B /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		1A64732728F421710063A71B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A64730E28F41FFB0063A71B /* AppDelegate.swift */,
+				1A64731028F41FFB0063A71B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A64732828F421960063A71B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A64731228F41FFB0063A71B /* ViewController.swift */,
+				1A64731428F41FFB0063A71B /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A64732A28F427A90063A71B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A64732B28F427C70063A71B /* Buttons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A64732D28F4294B0063A71B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A64732E28F4294B0063A71B /* SFProDisplay-Regular.ttf */,
+				1A64732F28F4294B0063A71B /* SFProDisplay-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +161,7 @@
 				1A64730728F41FFB0063A71B /* Sources */,
 				1A64730828F41FFB0063A71B /* Frameworks */,
 				1A64730928F41FFB0063A71B /* Resources */,
+				1A64732928F424960063A71B /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -127,11 +212,34 @@
 			files = (
 				1A64731B28F41FFE0063A71B /* LaunchScreen.storyboard in Resources */,
 				1A64731828F41FFE0063A71B /* Assets.xcassets in Resources */,
+				1A64733128F4294C0063A71B /* SFProDisplay-Bold.ttf in Resources */,
 				1A64731628F41FFB0063A71B /* Main.storyboard in Resources */,
+				1A64733028F4294C0063A71B /* SFProDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A64732928F424960063A71B /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A64730728F41FFB0063A71B /* Sources */ = {
@@ -141,6 +249,8 @@
 				1A64731328F41FFB0063A71B /* ViewController.swift in Sources */,
 				1A64730F28F41FFB0063A71B /* AppDelegate.swift in Sources */,
 				1A64731128F41FFB0063A71B /* SceneDelegate.swift in Sources */,
+				1A64733328F429DE0063A71B /* Resourses.swift in Sources */,
+				1A64732C28F427C70063A71B /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,12 +399,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TFP9B86SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bubbles/Info.plist;
+				INFOPLIST_FILE = Bubbles/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +416,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +429,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2TFP9B86SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bubbles/Info.plist;
+				INFOPLIST_FILE = Bubbles/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +446,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
