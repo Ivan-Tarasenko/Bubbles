@@ -160,8 +160,8 @@
 			buildPhases = (
 				1A64730728F41FFB0063A71B /* Sources */,
 				1A64730828F41FFB0063A71B /* Frameworks */,
-				1A64730928F41FFB0063A71B /* Resources */,
 				1A64732928F424960063A71B /* Swift Lint */,
+				1A64730928F41FFB0063A71B /* Resources */,
 			);
 			buildRules = (
 			);

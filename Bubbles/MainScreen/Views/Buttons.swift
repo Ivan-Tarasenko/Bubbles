@@ -11,7 +11,7 @@ class MenuButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setButton()
+//        setButton()
     }
 
     required init?(coder: NSCoder) {
