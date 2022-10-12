@@ -23,5 +23,4 @@ class Menu: UIView {
         view.frame = bounds
         addSubview(view)
     }
-
 }

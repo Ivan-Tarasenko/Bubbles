@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Training View Controller-->
+        <scene sceneID="3Gi-7g-EAE">
+            <objects>
+                <viewController storyboardIdentifier="Training" id="aid-xr-D7B" customClass="TrainingViewController" customModule="Bubbles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Training" id="8Ch-I7-t3X">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k69-Vc-rBl">
+                                <rect key="frame" x="296.33333333333331" y="57" width="63.666666666666686" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="c5c-dN-HPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-W3-UM6">
+                                <rect key="frame" x="16" y="93" width="358" height="688"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="164" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="244" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="309" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="397" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="467" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="551" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-Sz-DZW" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="73" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Hrl-1z-QZc" appends="YES" id="cUn-af-qeI"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmE-uR-6Tp">
+                                <rect key="frame" x="16" y="57" width="81.333333333333329" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="CDK-4Q-W4o"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Back">
+                                    <color key="titleColor" name="AccentColor"/>
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="aid-xr-D7B" eventType="touchUpInside" id="5aq-67-Tjk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sgh-q6-zs6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cdJ-W3-UM6" firstAttribute="top" secondItem="nmE-uR-6Tp" secondAttribute="bottom" constant="14" id="0cH-Od-Tqx"/>
+                            <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="cdJ-W3-UM6" secondAttribute="trailing" constant="16" id="33J-QT-bQP"/>
+                            <constraint firstItem="sgh-q6-zs6" firstAttribute="bottom" secondItem="cdJ-W3-UM6" secondAttribute="bottom" constant="29" id="9d0-Zl-hbq"/>
+                            <constraint firstItem="nmE-uR-6Tp" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="JHA-hA-L8g"/>
+                            <constraint firstItem="k69-Vc-rBl" firstAttribute="leading" secondItem="nmE-uR-6Tp" secondAttribute="trailing" constant="199" id="LL2-Cw-Bgq"/>
+                            <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="k69-Vc-rBl" secondAttribute="trailing" constant="30" id="PLK-Fq-QhN"/>
+                            <constraint firstItem="k69-Vc-rBl" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="b4M-Qt-V3G"/>
+                            <constraint firstItem="cdJ-W3-UM6" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="h8L-7E-SKi"/>
+                            <constraint firstItem="nmE-uR-6Tp" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="qLf-Mp-c9Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="k69-Vc-rBl" id="hIR-Or-2T0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ob2-0H-xQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Hrl-1z-QZc">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="Yx6-s7-off"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1086.1538461538462" y="-131.51658767772511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

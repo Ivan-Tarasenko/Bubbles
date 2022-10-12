@@ -11,7 +11,7 @@ import UIKit
 enum R {
     enum Menu {
         enum Color {
-            static let buttonSelect = UIColor.systemGreen
+            static let buttonSelect = UIColor(red: 0.4118, green: 0.5837, blue: 0.2667, alpha: 1)
             static let buttonUnselect = UIColor(red: 0.4118, green: 0.6980, blue: 0.2667, alpha: 1)
 
         }
