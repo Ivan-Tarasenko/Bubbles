@@ -1,0 +1,13 @@
+/* 
+  LocalizableString.strings
+  Bubbles
+
+  Created by Иван Тарасенко on 11.10.2022.
+  
+*/
+
+"Training" = "Training";
+
+"Game" = "Game";
+
+"Exit" = "Exit";
