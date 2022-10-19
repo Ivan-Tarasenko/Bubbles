@@ -7,9 +7,15 @@
 
 import UIKit
 
+@IBDesignable
 class CircleView: UIView {
 
     var circleView: UIView!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setView()
+    }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)

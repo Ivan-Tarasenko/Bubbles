@@ -31,38 +31,62 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-W3-UM6">
                                 <rect key="frame" x="16" y="93" width="358" height="688"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="231" y="164" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xqt-pN-6aB" appends="YES" id="zft-9J-tNG"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="70" y="244" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YX0-8K-qDa" appends="YES" id="4Lh-zu-uza"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="231" y="309" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="di3-N8-im4" appends="YES" id="XYx-vx-5co"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="70" y="397" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6pm-3y-6Dl" appends="YES" id="HEU-Cu-HFa"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="231" y="467" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pu2-oO-o5m" appends="YES" id="Ct6-kh-7xL"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                    <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="70" y="551" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dst-Kx-6xZ" appends="YES" id="PWG-Eu-HQO"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-Sz-DZW" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="73" width="70" height="70"/>
+                                        <rect key="frame" x="70" y="75" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -72,6 +96,7 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmE-uR-6Tp">
                                 <rect key="frame" x="16" y="57" width="81.333333333333329" height="22"/>
@@ -87,29 +112,86 @@
                                     <action selector="backButtonPressed:" destination="aid-xr-D7B" eventType="touchUpInside" id="5aq-67-Tjk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-5r-gtZ">
+                                <rect key="frame" x="158" y="50" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="but:" destination="aid-xr-D7B" eventType="touchUpInside" id="7oa-uN-ZHV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sgh-q6-zs6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cdJ-W3-UM6" firstAttribute="top" secondItem="nmE-uR-6Tp" secondAttribute="bottom" constant="14" id="0cH-Od-Tqx"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="cdJ-W3-UM6" secondAttribute="trailing" constant="16" id="33J-QT-bQP"/>
+                            <constraint firstItem="G3x-5r-gtZ" firstAttribute="leading" secondItem="nmE-uR-6Tp" secondAttribute="trailing" constant="60.670000000000002" id="5PY-09-8nC"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="bottom" secondItem="cdJ-W3-UM6" secondAttribute="bottom" constant="29" id="9d0-Zl-hbq"/>
                             <constraint firstItem="nmE-uR-6Tp" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="JHA-hA-L8g"/>
                             <constraint firstItem="k69-Vc-rBl" firstAttribute="leading" secondItem="nmE-uR-6Tp" secondAttribute="trailing" constant="199" id="LL2-Cw-Bgq"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="k69-Vc-rBl" secondAttribute="trailing" constant="30" id="PLK-Fq-QhN"/>
+                            <constraint firstItem="k69-Vc-rBl" firstAttribute="leading" secondItem="G3x-5r-gtZ" secondAttribute="trailing" constant="63.329999999999998" id="Yev-Oc-h7v"/>
                             <constraint firstItem="k69-Vc-rBl" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="b4M-Qt-V3G"/>
+                            <constraint firstItem="G3x-5r-gtZ" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="3" id="bee-Zs-uLx"/>
+                            <constraint firstItem="cdJ-W3-UM6" firstAttribute="top" secondItem="G3x-5r-gtZ" secondAttribute="bottom" constant="8" symbolic="YES" id="cPv-lK-Di6"/>
                             <constraint firstItem="cdJ-W3-UM6" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="h8L-7E-SKi"/>
                             <constraint firstItem="nmE-uR-6Tp" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="qLf-Mp-c9Z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="playingFieldView" destination="cdJ-W3-UM6" id="Fbu-i7-wt3"/>
                         <outlet property="scoreLabel" destination="k69-Vc-rBl" id="hIR-Or-2T0"/>
+                        <outletCollection property="bubbles" destination="wuZ-Sz-DZW" collectionClass="NSMutableArray" id="lF5-eN-gzf"/>
+                        <outletCollection property="bubbles" destination="udQ-ts-1Ci" collectionClass="NSMutableArray" id="WJI-B1-PKF"/>
+                        <outletCollection property="bubbles" destination="uB4-iT-X9J" collectionClass="NSMutableArray" id="yKM-Ag-kDq"/>
+                        <outletCollection property="bubbles" destination="4hR-Qc-JfF" collectionClass="NSMutableArray" id="Gjb-9T-ngV"/>
+                        <outletCollection property="bubbles" destination="znt-T8-Q7v" collectionClass="NSMutableArray" id="jBZ-Hl-eIM"/>
+                        <outletCollection property="bubbles" destination="whh-ZI-2lj" collectionClass="NSMutableArray" id="Sg6-4N-uif"/>
+                        <outletCollection property="bubbles" destination="DaB-CT-JZU" collectionClass="NSMutableArray" id="UKy-VX-zqd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ob2-0H-xQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Hrl-1z-QZc">
                     <connections>
                         <action selector="panAction:" destination="aid-xr-D7B" id="Yx6-s7-off"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="3kL-m9-uRP"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xqt-pN-6aB">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="1gE-4F-d7y"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="XwT-PT-5oc"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YX0-8K-qDa">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="Oit-ES-lPq"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="MCg-2t-Iw5"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="di3-N8-im4">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="8Xc-jc-cM1"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="IGq-Hf-oZk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pu2-oO-o5m">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="WAS-gT-B4h"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="Vco-pa-fqy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dst-Kx-6xZ">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="bdY-K9-ctL"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="XW4-6i-Kr7"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6pm-3y-6Dl">
+                    <connections>
+                        <action selector="panAction:" destination="aid-xr-D7B" id="bu0-qn-jEN"/>
+                        <outlet property="delegate" destination="aid-xr-D7B" id="kDE-IY-kVC"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>

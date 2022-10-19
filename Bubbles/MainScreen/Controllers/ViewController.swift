@@ -34,7 +34,6 @@ class ViewController: UIViewController {
 
     func trainingButtonPressed() {
         trainingButton.menuButton.buttonAction = {
-            print("training press")
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let trainitgVC = storyBoard.instantiateViewController(withIdentifier: "Training") as? TrainingViewController ?? UIViewController()
 
@@ -48,7 +47,6 @@ class ViewController: UIViewController {
 
     func gameButtonPressed() {
         gameButton.menuButton.buttonAction = {
-            print("game press")
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let gameVC = storyBoard.instantiateViewController(withIdentifier: "Game") as? GameViewController ?? UIViewController()
 
