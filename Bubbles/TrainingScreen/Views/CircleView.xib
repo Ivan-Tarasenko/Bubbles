@@ -17,7 +17,7 @@
             <viewLayoutGuide key="safeArea" id="kVT-Gp-VSO"/>
             <color key="backgroundColor" systemColor="systemBlueColor"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-45" y="9"/>
+            <point key="canvasLocation" x="-46.153846153846153" y="8.5308056872037916"/>
         </view>
     </objects>
     <resources>

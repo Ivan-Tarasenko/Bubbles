@@ -14,6 +14,9 @@ class TrainingViewController: UIViewController {
 
     @IBOutlet var bubbles: [CircleView]!
 
+    let model = TrainingViewModel()
+    var test = Set<Int>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemOrange
@@ -25,76 +28,59 @@ class TrainingViewController: UIViewController {
 
     @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
 
-        let gestureTransition = gesture.translation(in: view)
-        guard let gestureView = gesture.view else { return }
-
-        gestureView.center = CGPoint(x: gestureView.center.x + gestureTransition.x,
-                                     y: gestureView.center.y + gestureTransition.y)
-
-        gesture.setTranslation(.zero, in: view)
-        guard gesture.state == .ended else { return }
-
-        // ----------------------------------------------------------------------
-
-        guard let tag = gesture.view?.tag else { return }
-
-        print(tag)
-
-        var frameX = (Int(bubbles[0].frame.minX)...Int(bubbles[0].frame.maxX))
-        var frameY = (Int(bubbles[0].frame.minY)...Int(bubbles[0].frame.maxY))
-
-        print("\(frameX) frame X")
-        print("\(frameY) frame Y")
-
-        print("Y bubble \(tag) ///// \(bubbles[tag].frame.origin.y)")
-
-        // -----------------
-
-        for value in frameY {
-            if Int(bubbles[tag].frame.origin.y) == value ||
-                Int(bubbles[tag].frame.origin.y + bubbles[tag].frame.height) == value {
-
-                print("X bubble \(tag) ///// \(bubbles[tag].frame.origin.x)")
-
-                for value in frameX {
-                    if Int(bubbles[tag].frame.origin.x) == value ||
-                        Int(bubbles[tag].frame.origin.x + bubbles[tag].frame.width) == value {
-                        bubbles[0].circleView.backgroundColor = .systemPurple
-                    }
-                }
+        var tag: Int {
+            get {
+                return gesture.view?.tag ?? 0
+            }
+            set {
+                gesture.view?.tag = newValue
             }
         }
 
-        // --------------------
+        var frames = model.allFrames(from: bubbles)
+        model.setPanAction(for: view, gesture)
+        frames.removeValue(forKey: tag)
 
-    }
+        test.insert(tag)
+
+        var ttt:CGFloat = 0.0
+
+        for int in 0...test.count {
+            print("int \(int)")
+            ttt += 0.3
+            print("ttt \(ttt)")
+        }
+
+        switch gesture.state {
+        case .changed:
+            model.interactionView(bubbles, frames: frames, tag: tag) { [self] key in
+
+                UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8) { [self] in
+                    bubbles[key].transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+                    bubbles[key].circleView.backgroundColor = R.BubbleColor.Training.enlargedBubble
+                    bubbles[tag].transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                } completion: { _ in
+                    self.bubbles[tag].isHidden = true
+
+                }
+
+                print(self.test)
 
 
-    @IBAction func view2(_ gesture: UIPanGestureRecognizer) {
 
-        //        let gestureTransition = gesture.translation(in: view)
-        //        guard let gestureView = gesture.view else { return }
-        //
-        //        gestureView.center = CGPoint(x: gestureView.center.x + gestureTransition.x,
-        //                                     y: gestureView.center.y + gestureTransition.y)
-        //
-        //        gesture.setTranslation(.zero, in: view)
-        //        guard gesture.state == .ended else { return }
-        //
-        //
-        //        let view7Frame = view7.frame
-        //        let view6Frame = view6.frame
-        //
-        //        for value in Int(view7Frame.minY)...Int(view7Frame.maxY) {
-        //            if Int(view6Frame.origin.y) == value {
-        //                view7.circleView.backgroundColor = .systemPurple
-        //                print("eys")
-        //            }
-        //        }
 
-    }
-    @IBAction func but(_ sender: Any) {
-        bubbles[0].circleView.backgroundColor = .systemBlue
 
+                if !self.test.contains(key) {
+                    UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8) { [self] in
+
+
+
+                        self.bubbles[key].transform = CGAffineTransform(scaleX: 1.3 + ttt, y: 1.3 + ttt)
+                    }
+                }
+
+            }
+        default: break
+        }
     }
 }

@@ -35,7 +35,9 @@ class CircleView: UIView {
         circleView.layer.cornerRadius = circleView.frame.width / 2
         circleView.layer.borderWidth = 3
         circleView.layer.borderColor = UIColor.darkGray.cgColor
+        circleView.backgroundColor = R.BubbleColor.Training.initialBubble
         backgroundColor = .clear
+        layer.cornerRadius = frame.width / 2
 
         addSubview(circleView)
     }
