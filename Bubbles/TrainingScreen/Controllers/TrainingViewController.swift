@@ -15,11 +15,18 @@ class TrainingViewController: UIViewController {
     @IBOutlet var bubbles: [CircleView]!
 
     let model = TrainingViewModel()
-    var test = Set<Int>()
+    var score = Set<Int>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemOrange
+        setPlayingField()
+    }
+
+    func setPlayingField() {
+        playingFieldView.backgroundColor = R.PlayingField.Color.field
+        playingFieldView.layer.borderColor = UIColor.black.cgColor
+        playingFieldView.layer.borderWidth = 1
+        playingFieldView.layer.cornerRadius = 13
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -37,50 +44,27 @@ class TrainingViewController: UIViewController {
             }
         }
 
-        var frames = model.allFrames(from: bubbles)
         model.setPanAction(for: view, gesture)
+
+        var frames = model.allFrames(from: bubbles)
         frames.removeValue(forKey: tag)
 
-        test.insert(tag)
-
-        var ttt:CGFloat = 0.0
-
-        for int in 0...test.count {
-            print("int \(int)")
-            ttt += 0.3
-            print("ttt \(ttt)")
-        }
-
         switch gesture.state {
-        case .changed:
+        case .changed, .ended:
             model.interactionView(bubbles, frames: frames, tag: tag) { [self] key in
 
                 UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8) { [self] in
                     bubbles[key].transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
                     bubbles[key].circleView.backgroundColor = R.BubbleColor.Training.enlargedBubble
                     bubbles[tag].transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-                } completion: { _ in
-                    self.bubbles[tag].isHidden = true
-
+                    score.insert(tag)
+                } completion: { [self] _ in
+                    bubbles[tag].isHidden = true
                 }
-
-                print(self.test)
-
-
-
-
-
-                if !self.test.contains(key) {
-                    UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8) { [self] in
-
-
-
-                        self.bubbles[key].transform = CGAffineTransform(scaleX: 1.3 + ttt, y: 1.3 + ttt)
-                    }
-                }
-
             }
-        default: break
+        default:
+            break
         }
+        scoreLabel.text = "Score: \(score.count)"
     }
 }

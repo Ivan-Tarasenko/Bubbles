@@ -7,9 +7,15 @@
 
 import UIKit
 
+@IBDesignable
 class MenuButton: UIButton {
 
     var buttonAction: (() -> Void)?
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setButton()
+    }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)

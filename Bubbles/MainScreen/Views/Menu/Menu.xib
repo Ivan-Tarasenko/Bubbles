@@ -37,6 +37,11 @@
             <point key="canvasLocation" x="-68" y="-114"/>
         </view>
     </objects>
+    <designables>
+        <designable name="ttl-ag-KzO">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

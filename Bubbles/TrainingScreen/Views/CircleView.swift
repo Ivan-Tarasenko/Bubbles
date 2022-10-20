@@ -12,6 +12,15 @@ class CircleView: UIView {
 
     var circleView: UIView!
 
+   @IBInspectable var colorSet: UIColor {
+        get {
+            return circleView.backgroundColor!
+        }
+        set {
+            circleView.backgroundColor = newValue
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setView()
@@ -35,7 +44,7 @@ class CircleView: UIView {
         circleView.layer.cornerRadius = circleView.frame.width / 2
         circleView.layer.borderWidth = 3
         circleView.layer.borderColor = UIColor.darkGray.cgColor
-        circleView.backgroundColor = R.BubbleColor.Training.initialBubble
+//        circleView.backgroundColor = R.BubbleColor.Training.initialBubble
         backgroundColor = .clear
         layer.cornerRadius = frame.width / 2
 
