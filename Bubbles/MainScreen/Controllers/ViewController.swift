@@ -9,27 +9,58 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var buttons: [Menu]!
+    @IBOutlet weak var trainingButton: Menu!
+    @IBOutlet weak var gameButton: Menu!
+    @IBOutlet weak var exitButton: Menu!
 
     override func viewDidLoad() {
         super.viewDidLoad()
        setButtonsMenu()
+        trainingButtonPressed()
+        gameButtonPressed()
+        exitButtonPressed()
     }
 
     func setButtonsMenu() {
-        guard !buttons.isEmpty else { return }
+        trainingButton.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
+        trainingButton.menuButton.setTitle(R.Menu.Title.training, for: .normal)
 
-        let training = buttons[0]
-        let game = buttons[1]
-        let exit = buttons[2]
+        gameButton.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
+        gameButton.menuButton.setTitle(R.Menu.Title.game, for: .normal)
 
-        training.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
-        training.menuButton.setTitle(R.Menu.Title.training, for: .normal)
+        exitButton.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
+        exitButton.menuButton.setTitle(R.Menu.Title.exit, for: .normal)
+    }
 
-        game.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
-        game.menuButton.setTitle(R.Menu.Title.game, for: .normal)
+    func trainingButtonPressed() {
+        trainingButton.menuButton.buttonAction = {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let trainitgVC = storyBoard.instantiateViewController(withIdentifier: "Training") as? TrainingViewController ?? UIViewController()
 
-        exit.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
-        exit.menuButton.setTitle(R.Menu.Title.exit, for: .normal)
+            trainitgVC.modalPresentationStyle = .fullScreen
+            trainitgVC.modalTransitionStyle = .coverVertical
+
+            self.show(trainitgVC, sender: nil)
+
+        }
+    }
+
+    func gameButtonPressed() {
+        gameButton.menuButton.buttonAction = {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let gameVC = storyBoard.instantiateViewController(withIdentifier: "Game") as? GameViewController ?? UIViewController()
+
+            gameVC.modalPresentationStyle = .fullScreen
+            gameVC.modalTransitionStyle = .coverVertical
+
+            self.show(gameVC, sender: nil)
+        }
+    }
+
+    func exitButtonPressed() {
+        exitButton.menuButton.buttonAction = {
+            print("exit press")
+            exit(0)
+        }
     }
 }

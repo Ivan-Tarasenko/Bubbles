@@ -3,6 +3,7 @@ disabled_rules:
 - unused_optional_binding
 - force_try
 - type_name
+- nesting
 opt_in_rules:
 - empty_count
 - empty_string

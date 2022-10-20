@@ -9,11 +9,16 @@ import Foundation
 import UIKit
 
 enum R {
+    enum BubbleColor {
+        enum Training {
+            static let initialBubble = UIColor(hexString: "4186D3")
+            static let enlargedBubble = UIColor(hexString: "0D55A6")
+        }
+    }
     enum Menu {
         enum Color {
-            static let buttonSelect = UIColor.systemGreen
-            static let buttonUnselect = UIColor(red: 0.4118, green: 0.6980, blue: 0.2667, alpha: 1)
-
+            static let buttonSelect = UIColor(hexString: "2C5907")
+            static let buttonUnselect = UIColor(hexString: "4B8917") 
         }
 
         enum Title {

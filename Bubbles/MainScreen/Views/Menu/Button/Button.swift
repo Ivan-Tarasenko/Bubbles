@@ -9,9 +9,15 @@ import UIKit
 
 class MenuButton: UIButton {
 
+    var buttonAction: (() -> Void)?
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setButton()
+    }
+
+    @objc func buttonPressed() {
+        buttonAction?()
     }
 
     override open var isHighlighted: Bool {
@@ -26,5 +32,6 @@ class MenuButton: UIButton {
         layer.cornerRadius = 12
         layer.borderWidth = 1
         layer.borderColor = UIColor.darkGray.cgColor
+        addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
 }

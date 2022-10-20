@@ -17,10 +17,18 @@
 		1A64733028F4294C0063A71B /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A64732E28F4294B0063A71B /* SFProDisplay-Regular.ttf */; };
 		1A64733128F4294C0063A71B /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A64732F28F4294B0063A71B /* SFProDisplay-Bold.ttf */; };
 		1A64733328F429DE0063A71B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64733228F429DE0063A71B /* Resources.swift */; };
+		1A95BCA828FF25CC00F65EF1 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95BCA728FF25CC00F65EF1 /* TrainingViewModel.swift */; };
+		1A95BCAA29002DE700F65EF1 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95BCA929002DE700F65EF1 /* UIColor+HEX.swift */; };
 		1AFBAE2C28F57208008DBB94 /* LocalizableString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBAE2B28F57208008DBB94 /* LocalizableString.strings */; };
 		1AFBAE2E28F57397008DBB94 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBAE2D28F57397008DBB94 /* Menu.xib */; };
 		1AFBAE3028F573F2008DBB94 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBAE2F28F573F2008DBB94 /* Menu.swift */; };
 		1AFBAE3328F57637008DBB94 /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBAE3228F57637008DBB94 /* UIView+LoadNib.swift */; };
+		1AFBAE3728F65B9C008DBB94 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBAE3628F65B9C008DBB94 /* TrainingViewController.swift */; };
+		1AFBAE3928F65BEC008DBB94 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBAE3828F65BEC008DBB94 /* GameViewController.swift */; };
+		1AFBAE4628F6C80A008DBB94 /* Training.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBAE4428F6C80A008DBB94 /* Training.storyboard */; };
+		1AFBAE4928F6C8B6008DBB94 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBAE4828F6C8B6008DBB94 /* Game.storyboard */; };
+		1AFBAE4C28F6CD98008DBB94 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBAE4B28F6CD98008DBB94 /* CircleView.xib */; };
+		1AFBAE4E28F6CDFB008DBB94 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBAE4D28F6CDFB008DBB94 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +44,18 @@
 		1A64732E28F4294B0063A71B /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		1A64732F28F4294B0063A71B /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		1A64733228F429DE0063A71B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		1A95BCA728FF25CC00F65EF1 /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		1A95BCA929002DE700F65EF1 /* UIColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 		1AFBAE2B28F57208008DBB94 /* LocalizableString.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableString.strings; sourceTree = "<group>"; };
 		1AFBAE2D28F57397008DBB94 /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		1AFBAE2F28F573F2008DBB94 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		1AFBAE3228F57637008DBB94 /* UIView+LoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
+		1AFBAE3628F65B9C008DBB94 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		1AFBAE3828F65BEC008DBB94 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1AFBAE4528F6C80A008DBB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Bubbles/MainScreen/Controllers/Base.lproj/Training.storyboard; sourceTree = "<group>"; };
+		1AFBAE4828F6C8B6008DBB94 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		1AFBAE4B28F6CD98008DBB94 /* CircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
+		1AFBAE4D28F6CDFB008DBB94 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +88,9 @@
 		1A64730D28F41FFB0063A71B /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
-				1A64732628F421510063A71B /* GameScreen */,
-				1A64732528F4210E0063A71B /* TrainingScreen */,
 				1A64732428F420F10063A71B /* MainScreen */,
+				1A64732528F4210E0063A71B /* TrainingScreen */,
+				1A64732628F421510063A71B /* GameScreen */,
 				1A64732328F420CA0063A71B /* Resources */,
 				1A64732228F420B30063A71B /* SupportingFiles */,
 			);
@@ -115,6 +131,8 @@
 		1A64732528F4210E0063A71B /* TrainingScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1AFBAE4A28F6CB76008DBB94 /* Views */,
+				1AFBAE4728F6C80F008DBB94 /* Controllers */,
 			);
 			path = TrainingScreen;
 			sourceTree = "<group>";
@@ -122,6 +140,8 @@
 		1A64732628F421510063A71B /* GameScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1AFBAE3A28F6C358008DBB94 /* Views */,
+				1AFBAE3B28F6C366008DBB94 /* Controllers */,
 			);
 			path = GameScreen;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				1AFBAE3228F57637008DBB94 /* UIView+LoadNib.swift */,
+				1A95BCA929002DE700F65EF1 /* UIColor+HEX.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -172,9 +193,9 @@
 		1AFBAE3428F589AB008DBB94 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				1AFBAE3528F589BC008DBB94 /* Button */,
 				1AFBAE2F28F573F2008DBB94 /* Menu.swift */,
 				1AFBAE2D28F57397008DBB94 /* Menu.xib */,
+				1AFBAE3528F589BC008DBB94 /* Button */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -185,6 +206,41 @@
 				1A64732B28F427C70063A71B /* Button.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		1AFBAE3A28F6C358008DBB94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1AFBAE3B28F6C366008DBB94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AFBAE3828F65BEC008DBB94 /* GameViewController.swift */,
+				1AFBAE4828F6C8B6008DBB94 /* Game.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1AFBAE4728F6C80F008DBB94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AFBAE4428F6C80A008DBB94 /* Training.storyboard */,
+				1AFBAE3628F65B9C008DBB94 /* TrainingViewController.swift */,
+				1A95BCA728FF25CC00F65EF1 /* TrainingViewModel.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1AFBAE4A28F6CB76008DBB94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AFBAE4B28F6CD98008DBB94 /* CircleView.xib */,
+				1AFBAE4D28F6CDFB008DBB94 /* CircleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +305,12 @@
 				1A64731B28F41FFE0063A71B /* LaunchScreen.storyboard in Resources */,
 				1AFBAE2E28F57397008DBB94 /* Menu.xib in Resources */,
 				1A64731828F41FFE0063A71B /* Assets.xcassets in Resources */,
+				1AFBAE4928F6C8B6008DBB94 /* Game.storyboard in Resources */,
 				1A64733128F4294C0063A71B /* SFProDisplay-Bold.ttf in Resources */,
 				1A64731628F41FFB0063A71B /* Main.storyboard in Resources */,
 				1AFBAE2C28F57208008DBB94 /* LocalizableString.strings in Resources */,
+				1AFBAE4628F6C80A008DBB94 /* Training.storyboard in Resources */,
+				1AFBAE4C28F6CD98008DBB94 /* CircleView.xib in Resources */,
 				1A64733028F4294C0063A71B /* SFProDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +320,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		1A64732928F424960063A71B /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -284,11 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A95BCA828FF25CC00F65EF1 /* TrainingViewModel.swift in Sources */,
+				1A95BCAA29002DE700F65EF1 /* UIColor+HEX.swift in Sources */,
 				1A64731328F41FFB0063A71B /* ViewController.swift in Sources */,
 				1AFBAE3328F57637008DBB94 /* UIView+LoadNib.swift in Sources */,
 				1A64730F28F41FFB0063A71B /* AppDelegate.swift in Sources */,
 				1AFBAE3028F573F2008DBB94 /* Menu.swift in Sources */,
+				1AFBAE3928F65BEC008DBB94 /* GameViewController.swift in Sources */,
 				1A64731128F41FFB0063A71B /* SceneDelegate.swift in Sources */,
+				1AFBAE4E28F6CDFB008DBB94 /* CircleView.swift in Sources */,
+				1AFBAE3728F65B9C008DBB94 /* TrainingViewController.swift in Sources */,
 				1A64733328F429DE0063A71B /* Resources.swift in Sources */,
 				1A64732C28F427C70063A71B /* Button.swift in Sources */,
 			);
@@ -311,6 +376,14 @@
 				1A64731A28F41FFE0063A71B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1AFBAE4428F6C80A008DBB94 /* Training.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AFBAE4528F6C80A008DBB94 /* Base */,
+			);
+			name = Training.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
