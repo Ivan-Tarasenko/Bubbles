@@ -218,8 +218,8 @@
 		1AFBAE3B28F6C366008DBB94 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1AFBAE3828F65BEC008DBB94 /* GameViewController.swift */,
 				1AFBAE4828F6C8B6008DBB94 /* Game.storyboard */,
+				1AFBAE3828F65BEC008DBB94 /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

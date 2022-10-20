@@ -7,9 +7,15 @@
 
 import UIKit
 
+@IBDesignable
 class Menu: UIView {
 
     @IBOutlet weak var menuButton: MenuButton!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        getView()
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

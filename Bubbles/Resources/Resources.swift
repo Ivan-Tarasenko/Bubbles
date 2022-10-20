@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 enum R {
+    enum PlayingField {
+        enum Color {
+            static let field = UIColor(hexString: "FFC694")
+        }
+    }
     enum BubbleColor {
         enum Training {
             static let initialBubble = UIColor(hexString: "4186D3")

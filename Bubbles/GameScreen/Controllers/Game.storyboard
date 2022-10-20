@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,20 +16,72 @@
             <objects>
                 <viewController storyboardIdentifier="Game" id="7ZD-2b-btB" customClass="GameViewController" customModule="Bubbles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="edZ-IT-iY1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zr-c9-Mad">
+                                <rect key="frame" x="16" y="57" width="83.666666666666671" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="QeM-VL-VOe"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Back">
+                                    <color key="titleColor" name="AccentColor"/>
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="7ZD-2b-btB" eventType="touchUpInside" id="kJC-YO-dsB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-oe-9bY">
+                                <rect key="frame" x="16" y="93" width="358" height="688"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqO-8h-drZ">
+                                <rect key="frame" x="296.33333333333331" y="57" width="63.666666666666686" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ry2-We-X6E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="utX-Ji-0oT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HqO-8h-drZ" firstAttribute="top" secondItem="utX-Ji-0oT" secondAttribute="top" constant="10" id="5Lg-2n-g1I"/>
+                            <constraint firstItem="utX-Ji-0oT" firstAttribute="trailing" secondItem="QdJ-oe-9bY" secondAttribute="trailing" constant="16" id="7x4-NU-VhE"/>
+                            <constraint firstItem="QdJ-oe-9bY" firstAttribute="leading" secondItem="edZ-IT-iY1" secondAttribute="leading" constant="16" id="83K-LM-F1H"/>
+                            <constraint firstItem="utX-Ji-0oT" firstAttribute="bottom" secondItem="QdJ-oe-9bY" secondAttribute="bottom" constant="29" id="8se-Ai-P9T"/>
+                            <constraint firstItem="8zr-c9-Mad" firstAttribute="top" secondItem="utX-Ji-0oT" secondAttribute="top" constant="10" id="Kfw-Hf-PR8"/>
+                            <constraint firstItem="HqO-8h-drZ" firstAttribute="leading" secondItem="8zr-c9-Mad" secondAttribute="trailing" constant="196.66999999999999" id="a6G-fR-0O7"/>
+                            <constraint firstItem="QdJ-oe-9bY" firstAttribute="top" secondItem="8zr-c9-Mad" secondAttribute="bottom" constant="14" id="o1g-3b-MS0"/>
+                            <constraint firstItem="utX-Ji-0oT" firstAttribute="trailing" secondItem="HqO-8h-drZ" secondAttribute="trailing" constant="30" id="uIH-dE-2aW"/>
+                            <constraint firstItem="8zr-c9-Mad" firstAttribute="leading" secondItem="utX-Ji-0oT" secondAttribute="leading" constant="16" id="xSB-n0-gbK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playingFieldView" destination="QdJ-oe-9bY" id="9jh-5j-vt2"/>
+                        <outlet property="scoreLabel" destination="HqO-8h-drZ" id="Sza-9y-wG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="710-aW-cH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="611"/>
+            <point key="canvasLocation" x="1084.6153846153845" y="610.66350710900474"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
