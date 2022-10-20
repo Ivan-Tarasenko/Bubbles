@@ -32,7 +32,7 @@
                                 <rect key="frame" x="16" y="93" width="358" height="688"/>
                                 <subviews>
                                     <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="164" width="70" height="70"/>
+                                        <rect key="frame" x="231" y="128" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </view>
                                     <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="244" width="70" height="70"/>
+                                        <rect key="frame" x="70" y="188" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -60,7 +60,7 @@
                                         </connections>
                                     </view>
                                     <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="309" width="70" height="70"/>
+                                        <rect key="frame" x="231" y="254" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -74,7 +74,7 @@
                                         </connections>
                                     </view>
                                     <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="397" width="70" height="70"/>
+                                        <rect key="frame" x="70" y="299" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -87,22 +87,8 @@
                                             <outletCollection property="gestureRecognizers" destination="6pm-3y-6Dl" appends="YES" id="HEU-Cu-HFa"/>
                                         </connections>
                                     </view>
-                                    <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="467" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <gestureRecognizers/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
-                                                <color key="value" name="Initial Bubble"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="pu2-oO-o5m" appends="YES" id="Ct6-kh-7xL"/>
-                                        </connections>
-                                    </view>
                                     <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="551" width="70" height="70"/>
+                                        <rect key="frame" x="70" y="414" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
@@ -127,6 +113,20 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Hrl-1z-QZc" appends="YES" id="cUn-af-qeI"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="371" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
+                                                <color key="value" name="Initial Bubble"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pu2-oO-o5m" appends="YES" id="Ct6-kh-7xL"/>
                                         </connections>
                                     </view>
                                 </subviews>
