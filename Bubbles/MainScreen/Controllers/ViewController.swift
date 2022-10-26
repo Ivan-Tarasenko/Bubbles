@@ -11,14 +11,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var trainingButton: Menu!
     @IBOutlet weak var gameButton: Menu!
-    @IBOutlet weak var exitButton: Menu!
 
     override func viewDidLoad() {
         super.viewDidLoad()
        setButtonsMenu()
         trainingButtonPressed()
         gameButtonPressed()
-        exitButtonPressed()
     }
 
     func setButtonsMenu() {
@@ -27,9 +25,6 @@ class ViewController: UIViewController {
 
         gameButton.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
         gameButton.menuButton.setTitle(R.Menu.Title.game, for: .normal)
-
-        exitButton.menuButton.backgroundColor = R.Menu.Color.buttonUnselect
-        exitButton.menuButton.setTitle(R.Menu.Title.exit, for: .normal)
     }
 
     func trainingButtonPressed() {
@@ -54,13 +49,6 @@ class ViewController: UIViewController {
             gameVC.modalTransitionStyle = .coverVertical
 
             self.show(gameVC, sender: nil)
-        }
-    }
-
-    func exitButtonPressed() {
-        exitButton.menuButton.buttonAction = {
-            print("exit press")
-            exit(0)
         }
     }
 }

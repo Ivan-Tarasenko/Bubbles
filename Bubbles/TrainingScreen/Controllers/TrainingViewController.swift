@@ -47,17 +47,20 @@ class TrainingViewController: UIViewController {
         model.setPanAction(for: view, gesture)
 
         var frames = model.allFrames(from: bubbles)
+
         frames.removeValue(forKey: tag)
 
         switch gesture.state {
         case .changed, .ended:
             model.interactionView(bubbles, frames: frames, tag: tag) { [self] key in
 
+
                 UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8) { [self] in
                     bubbles[key].transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
                     bubbles[key].circleView.backgroundColor = R.BubbleColor.Training.enlargedBubble
                     bubbles[tag].transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
                     score.insert(tag)
+
                 } completion: { [self] _ in
                     bubbles[tag].isHidden = true
                 }

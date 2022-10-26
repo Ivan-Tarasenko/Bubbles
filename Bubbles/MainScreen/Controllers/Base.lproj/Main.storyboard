@@ -23,34 +23,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-1H-N1S">
-                                <rect key="frame" x="125" y="278" width="130" height="250"/>
+                                <rect key="frame" x="130" y="347" width="130" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do8-Qn-hZT" customClass="Menu" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="5ef-BB-807"/>
+                                            <constraint firstAttribute="height" constant="50" id="jYW-QM-ekM"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4t-jZ-Jqm" customClass="Menu" customModule="Bubbles" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="100" width="130" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rG5-P6-9Jc"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3md-hu-bUJ" customClass="Menu" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="130" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="GmT-YD-Tx1"/>
+                                            <constraint firstAttribute="height" constant="50" id="GXG-ie-Eid"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wOK-Kk-ZBJ"/>
+                                    <constraint firstAttribute="width" constant="130" id="yzJ-gf-1cz"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="MENU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="DlJ-tZ-Ad5">
-                                <rect key="frame" x="131" y="188" width="118" height="48"/>
+                                <rect key="frame" x="137.66666666666666" y="257" width="114.66666666666666" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="40"/>
                                 <color key="textColor" red="0.39442192113445929" green="0.58652799659305144" blue="0.2509674446778456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" white="0.48999999999999999" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,17 +56,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DlJ-tZ-Ad5" secondAttribute="trailing" constant="141" id="5tw-1P-rNw"/>
                             <constraint firstItem="u9U-1H-N1S" firstAttribute="top" secondItem="DlJ-tZ-Ad5" secondAttribute="bottom" constant="42" id="9w4-Ta-PJ6"/>
-                            <constraint firstItem="u9U-1H-N1S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="D42-x5-MTc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u9U-1H-N1S" secondAttribute="bottom" constant="282" id="Ewn-Ul-L2E"/>
-                            <constraint firstItem="DlJ-tZ-Ad5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="Otp-mg-2vm"/>
-                            <constraint firstItem="DlJ-tZ-Ad5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="V7M-0R-DhZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u9U-1H-N1S" secondAttribute="trailing" constant="135" id="vk5-W7-96z"/>
+                            <constraint firstItem="DlJ-tZ-Ad5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GaW-jG-JwA"/>
+                            <constraint firstItem="u9U-1H-N1S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uql-XW-WnE"/>
+                            <constraint firstItem="u9U-1H-N1S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uR7-9c-yB3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="exitButton" destination="3md-hu-bUJ" id="rrF-Hv-LnB"/>
                         <outlet property="gameButton" destination="Z4t-jZ-Jqm" id="Hr8-he-ViU"/>
                         <outlet property="trainingButton" destination="do8-Qn-hZT" id="UGb-ZP-kCY"/>
                     </connections>

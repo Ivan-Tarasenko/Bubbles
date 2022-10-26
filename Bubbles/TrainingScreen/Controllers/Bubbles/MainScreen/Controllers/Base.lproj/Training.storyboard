@@ -20,8 +20,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k69-Vc-rBl">
-                                <rect key="frame" x="296.33333333333331" y="57" width="63.666666666666686" height="21"/>
+                                <rect key="frame" x="295" y="57" width="65" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="EZW-T3-Ikh"/>
                                     <constraint firstAttribute="height" constant="21" id="c5c-dN-HPF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -31,11 +32,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-W3-UM6">
                                 <rect key="frame" x="16" y="93" width="358" height="688"/>
                                 <subviews>
-                                    <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="128" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-ts-1Ci" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="241" y="64" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="365-NV-Akh"/>
+                                            <constraint firstAttribute="height" constant="70" id="sdl-OX-M4V"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
@@ -45,11 +49,14 @@
                                             <outletCollection property="gestureRecognizers" destination="xqt-pN-6aB" appends="YES" id="zft-9J-tNG"/>
                                         </connections>
                                     </view>
-                                    <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="188" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-iT-X9J" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="204" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="fzq-5t-ze2"/>
+                                            <constraint firstAttribute="width" constant="70" id="pbB-Vm-yGE"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
@@ -59,11 +66,14 @@
                                             <outletCollection property="gestureRecognizers" destination="YX0-8K-qDa" appends="YES" id="4Lh-zu-uza"/>
                                         </connections>
                                     </view>
-                                    <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="254" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hR-Qc-JfF" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="278" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="CFE-bD-hRt"/>
+                                            <constraint firstAttribute="width" constant="70" id="Die-49-eqQ"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
@@ -73,25 +83,14 @@
                                             <outletCollection property="gestureRecognizers" destination="di3-N8-im4" appends="YES" id="XYx-vx-5co"/>
                                         </connections>
                                     </view>
-                                    <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="299" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="569" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
-                                                <color key="value" name="Initial Bubble"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="6pm-3y-6Dl" appends="YES" id="HEU-Cu-HFa"/>
-                                        </connections>
-                                    </view>
-                                    <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-CT-JZU" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="414" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="5za-xE-TUV"/>
+                                            <constraint firstAttribute="width" constant="70" id="QAT-mO-4kP"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
@@ -101,25 +100,31 @@
                                             <outletCollection property="gestureRecognizers" destination="dst-Kx-6xZ" appends="YES" id="PWG-Eu-HQO"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-Sz-DZW" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="75" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znt-T8-Q7v" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="367" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="N7I-z2-WwM"/>
+                                            <constraint firstAttribute="width" constant="70" id="tiq-Ru-Vl2"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Hrl-1z-QZc" appends="YES" id="cUn-af-qeI"/>
+                                            <outletCollection property="gestureRecognizers" destination="6pm-3y-6Dl" appends="YES" id="HEU-Cu-HFa"/>
                                         </connections>
                                     </view>
-                                    <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
-                                        <rect key="frame" x="231" y="371" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whh-ZI-2lj" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="241" y="513" width="70" height="70"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="gsM-MY-Y2O"/>
+                                            <constraint firstAttribute="height" constant="70" id="na2-TF-5c9"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
                                                 <color key="value" name="Initial Bubble"/>
@@ -129,14 +134,48 @@
                                             <outletCollection property="gestureRecognizers" destination="pu2-oO-o5m" appends="YES" id="Ct6-kh-7xL"/>
                                         </connections>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-Sz-DZW" customClass="CircleView" customModule="Bubbles" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="30" width="70" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="cx8-Pt-JoI"/>
+                                            <constraint firstAttribute="height" constant="70" id="rEZ-7C-xku"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorSet">
+                                                <color key="value" name="Initial Bubble"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Hrl-1z-QZc" appends="YES" id="cUn-af-qeI"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="wuZ-Sz-DZW" firstAttribute="leading" secondItem="cdJ-W3-UM6" secondAttribute="leading" constant="70" id="219-9W-JZ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="DaB-CT-JZU" secondAttribute="bottom" constant="49" id="5Ha-57-FSd"/>
+                                    <constraint firstItem="uB4-iT-X9J" firstAttribute="centerY" secondItem="cdJ-W3-UM6" secondAttribute="centerY" constant="-105" id="6SB-Xx-cOw"/>
+                                    <constraint firstItem="wuZ-Sz-DZW" firstAttribute="top" secondItem="cdJ-W3-UM6" secondAttribute="top" constant="30" id="9DN-2z-eTd"/>
+                                    <constraint firstAttribute="bottom" secondItem="whh-ZI-2lj" secondAttribute="bottom" constant="105" id="BBc-T3-5Mu"/>
+                                    <constraint firstItem="4hR-Qc-JfF" firstAttribute="centerY" secondItem="cdJ-W3-UM6" secondAttribute="centerY" constant="-31" id="Hbn-2y-AUU"/>
+                                    <constraint firstItem="udQ-ts-1Ci" firstAttribute="top" secondItem="cdJ-W3-UM6" secondAttribute="top" constant="64" id="Jb1-wN-IL2"/>
+                                    <constraint firstItem="znt-T8-Q7v" firstAttribute="centerY" secondItem="cdJ-W3-UM6" secondAttribute="centerY" constant="58" id="O0g-ai-s6A"/>
+                                    <constraint firstAttribute="trailing" secondItem="udQ-ts-1Ci" secondAttribute="trailing" constant="47" id="RSn-Eg-aJH"/>
+                                    <constraint firstAttribute="trailing" secondItem="whh-ZI-2lj" secondAttribute="trailing" constant="47" id="XSs-z9-LQ4"/>
+                                    <constraint firstItem="DaB-CT-JZU" firstAttribute="leading" secondItem="cdJ-W3-UM6" secondAttribute="leading" constant="70" id="Z8p-yr-8Pj"/>
+                                    <constraint firstItem="uB4-iT-X9J" firstAttribute="leading" secondItem="cdJ-W3-UM6" secondAttribute="leading" constant="70" id="fPE-ZH-vvb"/>
+                                    <constraint firstAttribute="trailing" secondItem="4hR-Qc-JfF" secondAttribute="trailing" constant="57" id="qni-FQ-3mf"/>
+                                    <constraint firstItem="znt-T8-Q7v" firstAttribute="leading" secondItem="cdJ-W3-UM6" secondAttribute="leading" constant="70" id="x3T-SZ-vfJ"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmE-uR-6Tp">
-                                <rect key="frame" x="16" y="57" width="81.333333333333329" height="22"/>
+                                <rect key="frame" x="15.999999999999996" y="57" width="57.666666666666657" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="CDK-4Q-W4o"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57.5" id="Sxq-NU-pMI"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title=" Back">
@@ -154,9 +193,9 @@
                             <constraint firstItem="cdJ-W3-UM6" firstAttribute="top" secondItem="nmE-uR-6Tp" secondAttribute="bottom" constant="14" id="0cH-Od-Tqx"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="cdJ-W3-UM6" secondAttribute="trailing" constant="16" id="33J-QT-bQP"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="bottom" secondItem="cdJ-W3-UM6" secondAttribute="bottom" constant="29" id="9d0-Zl-hbq"/>
-                            <constraint firstItem="nmE-uR-6Tp" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="JHA-hA-L8g"/>
-                            <constraint firstItem="k69-Vc-rBl" firstAttribute="leading" secondItem="nmE-uR-6Tp" secondAttribute="trailing" constant="199" id="LL2-Cw-Bgq"/>
+                            <constraint firstItem="nmE-uR-6Tp" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="Bb8-4p-gbM"/>
                             <constraint firstItem="sgh-q6-zs6" firstAttribute="trailing" secondItem="k69-Vc-rBl" secondAttribute="trailing" constant="30" id="PLK-Fq-QhN"/>
+                            <constraint firstItem="k69-Vc-rBl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nmE-uR-6Tp" secondAttribute="trailing" constant="8" symbolic="YES" id="WbV-PC-8pR"/>
                             <constraint firstItem="k69-Vc-rBl" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="b4M-Qt-V3G"/>
                             <constraint firstItem="cdJ-W3-UM6" firstAttribute="leading" secondItem="sgh-q6-zs6" secondAttribute="leading" constant="16" id="h8L-7E-SKi"/>
                             <constraint firstItem="nmE-uR-6Tp" firstAttribute="top" secondItem="sgh-q6-zs6" secondAttribute="top" constant="10" id="qLf-Mp-c9Z"/>
@@ -218,7 +257,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1086.1538461538462" y="-131.51658767772511"/>
+            <point key="canvasLocation" x="1085.625" y="-132.04225352112675"/>
         </scene>
     </scenes>
     <resources>
